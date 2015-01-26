@@ -15,6 +15,8 @@
 		46F98B651A74390C0072EB94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46F98B641A74390C0072EB94 /* Images.xcassets */; };
 		46F98B681A74390C0072EB94 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46F98B661A74390C0072EB94 /* LaunchScreen.xib */; };
 		46F98B741A74390C0072EB94 /* SpeedDemonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F98B731A74390C0072EB94 /* SpeedDemonTests.m */; };
+		46F98B7E1A74397B0072EB94 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F98B7D1A74397B0072EB94 /* CoreLocation.framework */; };
+		46F98B811A7439FA0072EB94 /* SPDAppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F98B801A7439FA0072EB94 /* SPDAppModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,9 @@
 		46F98B6D1A74390C0072EB94 /* SpeedDemonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedDemonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F98B721A74390C0072EB94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46F98B731A74390C0072EB94 /* SpeedDemonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedDemonTests.m; sourceTree = "<group>"; };
+		46F98B7D1A74397B0072EB94 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		46F98B7F1A7439FA0072EB94 /* SPDAppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDAppModel.h; sourceTree = "<group>"; };
+		46F98B801A7439FA0072EB94 /* SPDAppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDAppModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F98B7E1A74397B0072EB94 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +71,7 @@
 		46F98B481A74390C0072EB94 = {
 			isa = PBXGroup;
 			children = (
+				46F98B861A759D3F0072EB94 /* Frameworks */,
 				46F98B531A74390C0072EB94 /* SpeedDemon */,
 				46F98B701A74390C0072EB94 /* SpeedDemonTests */,
 				46F98B521A74390C0072EB94 /* Products */,
@@ -85,12 +92,11 @@
 			children = (
 				46F98B581A74390C0072EB94 /* AppDelegate.h */,
 				46F98B591A74390C0072EB94 /* AppDelegate.m */,
-				46F98B5E1A74390C0072EB94 /* ViewController.h */,
-				46F98B5F1A74390C0072EB94 /* ViewController.m */,
 				46F98B611A74390C0072EB94 /* Main.storyboard */,
-				46F98B641A74390C0072EB94 /* Images.xcassets */,
-				46F98B661A74390C0072EB94 /* LaunchScreen.xib */,
-				46F98B5B1A74390C0072EB94 /* SpeedDemon.xcdatamodeld */,
+				46F98B851A743A530072EB94 /* MoGen */,
+				46F98B841A743A360072EB94 /* View Controllers */,
+				46F98B821A743A080072EB94 /* Models */,
+				46F98B831A743A240072EB94 /* Resources */,
 				46F98B541A74390C0072EB94 /* Supporting Files */,
 			);
 			path = SpeedDemon;
@@ -120,6 +126,50 @@
 				46F98B721A74390C0072EB94 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46F98B821A743A080072EB94 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				46F98B7F1A7439FA0072EB94 /* SPDAppModel.h */,
+				46F98B801A7439FA0072EB94 /* SPDAppModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		46F98B831A743A240072EB94 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				46F98B641A74390C0072EB94 /* Images.xcassets */,
+				46F98B661A74390C0072EB94 /* LaunchScreen.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		46F98B841A743A360072EB94 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				46F98B5E1A74390C0072EB94 /* ViewController.h */,
+				46F98B5F1A74390C0072EB94 /* ViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		46F98B851A743A530072EB94 /* MoGen */ = {
+			isa = PBXGroup;
+			children = (
+				46F98B5B1A74390C0072EB94 /* SpeedDemon.xcdatamodeld */,
+			);
+			name = MoGen;
+			sourceTree = "<group>";
+		};
+		46F98B861A759D3F0072EB94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46F98B7D1A74397B0072EB94 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			path = SpeedDemon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F98B811A7439FA0072EB94 /* SPDAppModel.m in Sources */,
 				46F98B5A1A74390C0072EB94 /* AppDelegate.m in Sources */,
 				46F98B5D1A74390C0072EB94 /* SpeedDemon.xcdatamodeld in Sources */,
 				46F98B601A74390C0072EB94 /* ViewController.m in Sources */,
