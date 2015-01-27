@@ -17,6 +17,14 @@
 		46F98B741A74390C0072EB94 /* SpeedDemonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F98B731A74390C0072EB94 /* SpeedDemonTests.m */; };
 		46F98B7E1A74397B0072EB94 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F98B7D1A74397B0072EB94 /* CoreLocation.framework */; };
 		46F98B811A7439FA0072EB94 /* SPDAppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F98B801A7439FA0072EB94 /* SPDAppModel.m */; };
+		8FB96A0F1A76DD9B00F9266F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB96A0E1A76DD9B00F9266F /* MapKit.framework */; };
+		8FB96A111A76DDA100F9266F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB96A101A76DDA100F9266F /* UIKit.framework */; };
+		8FB96A131A76DDBC00F9266F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB96A121A76DDBB00F9266F /* CoreData.framework */; };
+		8FB96A151A76DDC200F9266F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB96A141A76DDC200F9266F /* CoreGraphics.framework */; };
+		8FB96A171A76DDDE00F9266F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB96A161A76DDDE00F9266F /* Foundation.framework */; };
+		8FB96A1A1A76DF3100F9266F /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB96A191A76DF3100F9266F /* Location.m */; };
+		8FB96A1D1A76DF3100F9266F /* Drive.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB96A1C1A76DF3100F9266F /* Drive.m */; };
+		8FB96A201A76E20F00F9266F /* MulticolorPolylineSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB96A1F1A76E20F00F9266F /* MulticolorPolylineSegment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,17 @@
 		46F98B7D1A74397B0072EB94 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		46F98B7F1A7439FA0072EB94 /* SPDAppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDAppModel.h; sourceTree = "<group>"; };
 		46F98B801A7439FA0072EB94 /* SPDAppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDAppModel.m; sourceTree = "<group>"; };
+		8FB96A0E1A76DD9B00F9266F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8FB96A101A76DDA100F9266F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8FB96A121A76DDBB00F9266F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8FB96A141A76DDC200F9266F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8FB96A161A76DDDE00F9266F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8FB96A181A76DF3100F9266F /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		8FB96A191A76DF3100F9266F /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		8FB96A1B1A76DF3100F9266F /* Drive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drive.h; sourceTree = "<group>"; };
+		8FB96A1C1A76DF3100F9266F /* Drive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drive.m; sourceTree = "<group>"; };
+		8FB96A1E1A76E20F00F9266F /* MulticolorPolylineSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MulticolorPolylineSegment.h; sourceTree = "<group>"; };
+		8FB96A1F1A76E20F00F9266F /* MulticolorPolylineSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MulticolorPolylineSegment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +73,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB96A171A76DDDE00F9266F /* Foundation.framework in Frameworks */,
+				8FB96A151A76DDC200F9266F /* CoreGraphics.framework in Frameworks */,
+				8FB96A131A76DDBC00F9266F /* CoreData.framework in Frameworks */,
+				8FB96A111A76DDA100F9266F /* UIKit.framework in Frameworks */,
+				8FB96A0F1A76DD9B00F9266F /* MapKit.framework in Frameworks */,
 				46F98B7E1A74397B0072EB94 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +175,8 @@
 			children = (
 				46F98B5E1A74390C0072EB94 /* ViewController.h */,
 				46F98B5F1A74390C0072EB94 /* ViewController.m */,
+				8FB96A1E1A76E20F00F9266F /* MulticolorPolylineSegment.h */,
+				8FB96A1F1A76E20F00F9266F /* MulticolorPolylineSegment.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -159,6 +185,10 @@
 			isa = PBXGroup;
 			children = (
 				46F98B5B1A74390C0072EB94 /* SpeedDemon.xcdatamodeld */,
+				8FB96A1B1A76DF3100F9266F /* Drive.h */,
+				8FB96A1C1A76DF3100F9266F /* Drive.m */,
+				8FB96A181A76DF3100F9266F /* Location.h */,
+				8FB96A191A76DF3100F9266F /* Location.m */,
 			);
 			name = MoGen;
 			sourceTree = "<group>";
@@ -166,6 +196,11 @@
 		46F98B861A759D3F0072EB94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8FB96A161A76DDDE00F9266F /* Foundation.framework */,
+				8FB96A141A76DDC200F9266F /* CoreGraphics.framework */,
+				8FB96A121A76DDBB00F9266F /* CoreData.framework */,
+				8FB96A101A76DDA100F9266F /* UIKit.framework */,
+				8FB96A0E1A76DD9B00F9266F /* MapKit.framework */,
 				46F98B7D1A74397B0072EB94 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
@@ -276,7 +311,10 @@
 				46F98B5A1A74390C0072EB94 /* AppDelegate.m in Sources */,
 				46F98B5D1A74390C0072EB94 /* SpeedDemon.xcdatamodeld in Sources */,
 				46F98B601A74390C0072EB94 /* ViewController.m in Sources */,
+				8FB96A1D1A76DF3100F9266F /* Drive.m in Sources */,
+				8FB96A1A1A76DF3100F9266F /* Location.m in Sources */,
 				46F98B571A74390C0072EB94 /* main.m in Sources */,
+				8FB96A201A76E20F00F9266F /* MulticolorPolylineSegment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +505,7 @@
 				46F98B791A74390C0072EB94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46F98B7A1A74390C0072EB94 /* Build configuration list for PBXNativeTarget "SpeedDemonTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +514,7 @@
 				46F98B7C1A74390C0072EB94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

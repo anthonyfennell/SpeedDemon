@@ -7,14 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreLocation/CoreLocation.h>
+#import "Drive.h"
+#import "Location.h"
 
 @interface SPDAppModel : NSObject
 
-@property (nonatomic, strong) CLLocationManager *locationManager;
-
 + (instancetype)sharedModel;
 
-- (void)askForPermissionForUse;
+- (Drive *)saveDriveDistance:(float)distance duration:(int)duration locations:(NSArray *)locations;
+
+- (NSString *)stringifyDistance:(float)meters;
+- (NSString *)stringifySecondCount:(int)seconds usingLongFormat:(BOOL)longFormat;
+- (NSString *)stringifyAvgPaceFromDist:(float)meters overTime:(int)seconds;
+
+- (NSArray *)colorSegmentsForLocations:(NSArray *)locations;
 
 @end

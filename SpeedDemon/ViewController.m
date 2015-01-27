@@ -8,13 +8,14 @@
 
 #import "ViewController.h"
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 #import "SPDAppModel.h"
 
 #define MILES_IN_A_METER 0.0006214
-#define SECONDS_IN_AN_HOUR 360
+#define SECONDS_IN_AN_HOUR 3600
 #define FEET_IN_A_METER 3.281
 
-@interface ViewController () <CLLocationManagerDelegate>
+@interface ViewController () <UIActionSheetDelegate, CLLocationManagerDelegate, MKMapViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UILabel *speedLabel;
@@ -23,8 +24,11 @@
 @property (strong, nonatomic) CLLocation *previousLocation;
 
 @property (nonatomic) BOOL isFirstLocation;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @property (nonatomic, strong) CLLocationManager *locationManager;
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
+@property (weak, nonatomic) IBOutlet UIButton *stopButton;
 
 @end
 
@@ -43,8 +47,21 @@
     }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.stopButton.hidden = YES;
+    self.mapView.hidden = YES;
+}
+
+- (IBAction)startButtonTapped:(id)sender {
+    self.startButton.hidden = YES;
+    self.stopButton.hidden = NO;
+    self.mapView.hidden = NO;
+}
+
+- (IBAction)stopButtonTapped:(id)sender {
 }
 
 - (void)locationManager:(CLLocationManager *)manager
